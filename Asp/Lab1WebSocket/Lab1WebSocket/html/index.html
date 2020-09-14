@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" id="startBtn" value="Пуск" />
+    <input type="button" id="stopBtn" value="Стоп" />
+    <div id="messages"></div>
+    <script>
+        var socket;
+        var messages = document.getElementById("messages");
+        var startBtn = document.getElementById("startBtn");
+        var stopBtn = document.getElementById("stopBtn");
+
+        startBtn.onclick = function () {
+            socket = new WebSocket("ws://localhost:64744/test");
+            socket.onmessage = function (e) {
+                var element = document.createElement('p');
+                element.innerHTML = e.data;
+                messages.appendChild(element);
+            }     
+        }
+
+        stopBtn.onclick = function () {
+            socket.close();
+        }
+    </script>
+</body>
+</html>

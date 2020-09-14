@@ -1,0 +1,39 @@
+﻿@model Lab3.Models.TS
+
+@{
+    ViewBag.Title = "Удаление";
+}
+
+<h2 style="text-align:center">Удаление</h2>
+
+<h3>Вы действительно хотите удалить данную строку?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-success" />
+            <a href="~/Dict/Index" class="btn btn-danger">Назад</a>
+        </div>
+    }
+</div>
