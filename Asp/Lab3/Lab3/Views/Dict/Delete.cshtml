@@ -7,33 +7,32 @@
 <h2 style="text-align:center">Удаление</h2>
 
 <h3>Вы действительно хотите удалить данную строку?</h3>
+<hr />
 <div>
-    <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Surname)
+            Фамилия:
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Surname)
+            @Model.Surname
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Phone)
+            Телефон:
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Phone)
+            @Model.Phone
         </dd>
 
     </dl>
 
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
-
+    <form action="Delete" method="post">
         <div class="form-actions no-color">
+            <input hidden name="Id" value="@Model.Id"/>
             <input type="submit" value="Удалить" class="btn btn-success" />
             <a href="~/Dict/Index" class="btn btn-danger">Назад</a>
         </div>
-    }
+    </form>
 </div>
