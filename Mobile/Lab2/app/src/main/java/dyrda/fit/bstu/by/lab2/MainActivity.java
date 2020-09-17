@@ -19,6 +19,20 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     Map<Integer,Float> k= new HashMap<Integer, Float>();
+    
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        TextView resString=findViewById(R.id.result);
+        outState.putString("stringRes",resString.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        TextView txtV=findViewById(R.id.result);
+        txtV.setText(savedInstanceState.getString("stringRes"));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                         bmr=66.4730f+(13.7516f * Float.parseFloat(weigth.getText().toString())) + (5.0033f * Float.parseFloat(growth.getText().toString()))
                                 - (6.7550f * Float.parseFloat(age.getText().toString()));
                     }
-                    float res=amr*bmr;
+                    float res=bmr*amr;
                     result.setText("Суточная норма калорий: "+(int)res);
                 }
             }
