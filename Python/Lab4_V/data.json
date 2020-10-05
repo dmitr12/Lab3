@@ -1,0 +1,236 @@
+[
+  {
+    "id": 53257316,
+    "age": 0,
+    "photo": 0,
+    "countVideo": 0,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 0
+  },
+  {
+    "id": 101831958,
+    "age": 0,
+    "photo": 15,
+    "countVideo": 21,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 0
+  },
+  {
+    "id": 121206974,
+    "age": 21,
+    "photo": 124,
+    "countVideo": 1201,
+    "countNotes": 0,
+    "countGroups": 135,
+    "cityId": 282
+  },
+  {
+    "id": 137066129,
+    "age": 0,
+    "photo": 4,
+    "countVideo": 8,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 0
+  },
+  {
+    "id": 139234596,
+    "age": 0,
+    "photo": 19,
+    "countVideo": 6,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 139414026,
+    "age": 21,
+    "photo": 6,
+    "countVideo": 357,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 144660675,
+    "age": 0,
+    "photo": 26,
+    "countVideo": 0,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 146713176,
+    "age": 0,
+    "photo": 6,
+    "countVideo": 66,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 146892806,
+    "age": 23,
+    "photo": 17,
+    "countVideo": 55,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 147814284,
+    "age": 0,
+    "photo": 7,
+    "countVideo": 548,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 149065158,
+    "age": 0,
+    "photo": 10,
+    "countVideo": 61,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 152791791,
+    "age": 77,
+    "photo": 199,
+    "countVideo": 188,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 0
+  },
+  {
+    "id": 153957568,
+    "age": 20,
+    "photo": 2,
+    "countVideo": 0,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 158365134,
+    "age": 21,
+    "photo": 4,
+    "countVideo": 18,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 159126902,
+    "age": 0,
+    "photo": 7,
+    "countVideo": 0,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 0
+  },
+  {
+    "id": 160130860,
+    "age": 0,
+    "photo": 19,
+    "countVideo": 620,
+    "countNotes": 0,
+    "countGroups": 38,
+    "cityId": 1107
+  },
+  {
+    "id": 160907151,
+    "age": 0,
+    "photo": 5,
+    "countVideo": 10,
+    "countNotes": 0,
+    "countGroups": 31,
+    "cityId": 282
+  },
+  {
+    "id": 169155217,
+    "age": 21,
+    "photo": 74,
+    "countVideo": 120,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 176360893,
+    "age": 0,
+    "photo": 5,
+    "countVideo": 1948,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 0
+  },
+  {
+    "id": 176590905,
+    "age": 22,
+    "photo": 20,
+    "countVideo": 4,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 177145627,
+    "age": 21,
+    "photo": 19,
+    "countVideo": 0,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 177991274,
+    "age": 0,
+    "photo": 4,
+    "countVideo": 109,
+    "countNotes": 0,
+    "countGroups": 27,
+    "cityId": 538
+  },
+  {
+    "id": 190387867,
+    "age": 0,
+    "photo": 3,
+    "countVideo": 0,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 282
+  },
+  {
+    "id": 288323850,
+    "age": 0,
+    "photo": 6,
+    "countVideo": 51,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 0
+  },
+  {
+    "id": 363912707,
+    "age": 22,
+    "photo": 6,
+    "countVideo": 1,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 281
+  },
+  {
+    "id": 369815336,
+    "age": 0,
+    "photo": 3,
+    "countVideo": 23,
+    "countNotes": 0,
+    "countGroups": 0,
+    "cityId": 0
+  }
+]

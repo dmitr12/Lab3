@@ -1,0 +1,16 @@
+﻿@model JsonL.Models.TS
+
+@{
+    <tr>
+        <td>
+            @Model.Surname
+        </td>
+        <td>
+            @Model.Phone
+        </td>
+        <td>
+            @Html.ActionLink("Изменить", "Update", new { id = Model.Id }) |
+            @Html.ActionLink("Удалить", "Delete", new { id = Model.Id })
+        </td>
+    </tr>
+}

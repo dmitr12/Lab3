@@ -13,7 +13,7 @@ namespace Lab5b.Controllers
         [Route("{n:int}/{string}")]
         public string M01(int n, string @string)
         {
-            return $"{Request.HttpMethod}:{Request.Url.AbsoluteUri}:{n}:{@string}";
+            return $"{Request.HttpMethod}:M01:{n}:{@string}";
         }
 
         [AcceptVerbs("GET", "POST")]
