@@ -4,17 +4,19 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import AgglomerativeClustering
 import scipy.cluster.hierarchy as sch
 
+
 def main():
     df_raw = pd.read_json(r"data.json")
+
     data = df_raw[['cityId', 'photo']]
 
     X = np.array(data)
 
     X = np.delete(X, np.where(X == 0)[0], axis=0)
 
-    fig = plt.figure(figsize=(15, 15))
+    fig = plt.figure(figsize=(5, 5))
 
-    model = AgglomerativeClustering(n_clusters=2, affinity='euclidean', linkage='average')
+    model = AgglomerativeClustering(n_clusters=2, affinity='euclidean', linkage='ward')
     model.fit(X)
 
     labels = model.labels_
@@ -26,17 +28,16 @@ def main():
 
     plt.show(block=False)
 
-    fig = plt.figure(figsize=(15, 15))
+    fig = plt.figure(figsize=(5, 5))
 
     data = df_raw[['age', 'cityId', 'countVideo']]
 
     X = np.array(data)
 
-    dendrogram = sch.dendrogram(sch.linkage(X, method='average'))
+    dendrogram = sch.dendrogram(sch.linkage(X, method='ward'))
 
     plt.show()
 
 
-
-if __name__=='__main__':
+if __name__ == '__main__':
     main()

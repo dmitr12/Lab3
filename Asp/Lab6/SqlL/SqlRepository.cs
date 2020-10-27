@@ -2,6 +2,7 @@
 using JsonL.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,10 +12,12 @@ namespace SqlL
     public class SqlRepository : IPhoneDictionary
     {
         TSContext context;
+        static int count=0;
 
         public SqlRepository(string connectionString)
         {
             context = new TSContext(connectionString);
+            Debug.WriteLine($"объект SqlRepository создан, count={++count}");
         }
 
         public void Add(TS ts, out string status)

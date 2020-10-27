@@ -1,0 +1,20 @@
+﻿@model TestWebApi.Models.Reservation
+
+
+<div class="panel-heading">
+    Создать заказ
+</div>
+<div class="panel-body">
+    @using (Html.BeginForm("Add", "Home"))
+    {
+        <div class="form-group">
+            <label>Имя клиента</label>
+            @Html.TextBoxFor(m => m.ClientName, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label>Помещение</label>
+            @Html.TextBoxFor(m => m.Location, new { @class = "form-control" })
+        </div>
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    }
+</div>

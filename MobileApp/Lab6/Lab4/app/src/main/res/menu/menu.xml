@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/getAll"
+        android:title="Вывести все"
+        />
+    <item
+        android:id="@+id/getFav"
+        android:title="Вывести избранные"
+        />
+    <item
+        android:id="@+id/getSort"
+        android:title="Отсортировать"
+        />
+</menu>

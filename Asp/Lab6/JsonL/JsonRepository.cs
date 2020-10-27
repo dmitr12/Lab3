@@ -1,8 +1,10 @@
 ﻿using JsonL.Interfaces;
 using JsonL.Models;
 using Newtonsoft.Json;
+using NLog;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,10 +15,16 @@ namespace JsonL
     public class JsonRepository : IPhoneDictionary
     {
         private string path=Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "file.json");
+        static int count=0;
+
+        public JsonRepository()
+        {
+            Debug.WriteLine($"объект JsonRepository создан, count={++count}");
+        }
         public void Add(TS ts, out string status)
         {
             var listData = new List<TS>();
-            if (System.IO.File.Exists(path))
+            if (File.Exists(path))
             {
                 listData = GetTSList();
                 if (listData.Any(item => item.Surname.ToLower() == ts.Surname.ToLower()))
@@ -85,7 +93,7 @@ namespace JsonL
                 }
             }
             listData.Add(ts);
-            System.IO.File.WriteAllText(path, JsonConvert.SerializeObject(listData));
+            File.WriteAllText(path, JsonConvert.SerializeObject(listData));
             status = "ok";
         }
 
@@ -97,9 +105,9 @@ namespace JsonL
         public List<TS> GetTSList()
         {
             List<TS> list=null;
-            if (System.IO.File.Exists(path))
+            if (File.Exists(path))
             {
-                var jsonData = System.IO.File.ReadAllText(path);
+                var jsonData = File.ReadAllText(path);
                 list = JsonConvert.DeserializeObject<List<TS>>(jsonData) ?? new List<TS>();
             }
             return list;

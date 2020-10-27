@@ -101,3 +101,4 @@ C:\Labs\Asp\Lab6\Lab6\bin\SqlL.dll.config
 C:\Labs\Asp\Lab6\Lab6\bin\EntityFramework.xml
 C:\Labs\Asp\Lab6\Lab6\bin\EntityFramework.SqlServer.dll
 C:\Labs\Asp\Lab6\Lab6\bin\EntityFramework.SqlServer.xml
+C:\Labs\Asp\Lab6\Lab6\bin\JsonL.dll.config

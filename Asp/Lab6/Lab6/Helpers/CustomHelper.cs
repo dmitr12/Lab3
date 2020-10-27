@@ -11,7 +11,7 @@ namespace Lab6.Helpers
         public static MvcHtmlString CreateTxtBox(this HtmlHelper html,string name, string type,string defValue="", string htmlClass="")
         {
             TagBuilder txtB = new TagBuilder("input");
-            txtB.MergeAttribute("type", "text");
+         
             txtB.MergeAttributes(new Dictionary<string, string>()
             {
                 {"type", type},

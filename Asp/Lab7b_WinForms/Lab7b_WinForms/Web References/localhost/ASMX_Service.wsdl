@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAllTS">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllTSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllTSResult" type="tns:ArrayOfTS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TS" nillable="true" type="tns:TS" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TS">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Surname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddTS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ts" type="tns:TS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddTSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditTS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ts" type="tns:TS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditTSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EditTSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteTSResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllTSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllTS" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllTSResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTSSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTS" />
+  </wsdl:message>
+  <wsdl:message name="AddTSSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTSResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditTSSoapIn">
+    <wsdl:part name="parameters" element="tns:EditTS" />
+  </wsdl:message>
+  <wsdl:message name="EditTSSoapOut">
+    <wsdl:part name="parameters" element="tns:EditTSResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTSSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteTS" />
+  </wsdl:message>
+  <wsdl:message name="DeleteTSSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteTSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ASMX_ServiceSoap">
+    <wsdl:operation name="GetAllTS">
+      <wsdl:input message="tns:GetAllTSSoapIn" />
+      <wsdl:output message="tns:GetAllTSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTS">
+      <wsdl:input message="tns:AddTSSoapIn" />
+      <wsdl:output message="tns:AddTSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditTS">
+      <wsdl:input message="tns:EditTSSoapIn" />
+      <wsdl:output message="tns:EditTSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTS">
+      <wsdl:input message="tns:DeleteTSSoapIn" />
+      <wsdl:output message="tns:DeleteTSSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ASMX_ServiceSoap" type="tns:ASMX_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllTS">
+      <soap:operation soapAction="http://tempuri.org/GetAllTS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTS">
+      <soap:operation soapAction="http://tempuri.org/AddTS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditTS">
+      <soap:operation soapAction="http://tempuri.org/EditTS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTS">
+      <soap:operation soapAction="http://tempuri.org/DeleteTS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ASMX_ServiceSoap12" type="tns:ASMX_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllTS">
+      <soap12:operation soapAction="http://tempuri.org/GetAllTS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTS">
+      <soap12:operation soapAction="http://tempuri.org/AddTS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditTS">
+      <soap12:operation soapAction="http://tempuri.org/EditTS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTS">
+      <soap12:operation soapAction="http://tempuri.org/DeleteTS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ASMX_Service">
+    <wsdl:port name="ASMX_ServiceSoap" binding="tns:ASMX_ServiceSoap">
+      <soap:address location="http://localhost:53441/ASMX_Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ASMX_ServiceSoap12" binding="tns:ASMX_ServiceSoap12">
+      <soap12:address location="http://localhost:53441/ASMX_Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab7_WCF_Server", "Lab7_WCF_Server\Lab7_WCF_Server.csproj", "{40492737-A0E8-4697-A078-025E1E8389ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{2E911AEC-A0EF-4F3B-A982-F3E3F4DD2262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40492737-A0E8-4697-A078-025E1E8389ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40492737-A0E8-4697-A078-025E1E8389ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40492737-A0E8-4697-A078-025E1E8389ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40492737-A0E8-4697-A078-025E1E8389ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E911AEC-A0EF-4F3B-A982-F3E3F4DD2262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E911AEC-A0EF-4F3B-A982-F3E3F4DD2262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E911AEC-A0EF-4F3B-A982-F3E3F4DD2262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E911AEC-A0EF-4F3B-A982-F3E3F4DD2262}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62FDB722-E4C0-4A11-954E-BB12CF1050D8}
+	EndGlobalSection
+EndGlobal

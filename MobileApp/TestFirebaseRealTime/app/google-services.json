@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "164554438316",
+    "firebase_url": "https://cloudtasks-ee127.firebaseio.com",
+    "project_id": "cloudtasks-ee127",
+    "storage_bucket": "cloudtasks-ee127.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164554438316:android:9718ade3ab8eb14e811109",
+        "android_client_info": {
+          "package_name": "dyrda.fit.bstu.by.lab4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164554438316-jgmcf8nqo0utstbc2lvelj375ksp6hh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkXY1YMTjr_PPJXRLc-UFCLg-OFFLVQ0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164554438316-jgmcf8nqo0utstbc2lvelj375ksp6hh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164554438316:android:ad69ca6e83724e46811109",
+        "android_client_info": {
+          "package_name": "dyrda.fit.bstu.by.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164554438316-jgmcf8nqo0utstbc2lvelj375ksp6hh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkXY1YMTjr_PPJXRLc-UFCLg-OFFLVQ0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164554438316-jgmcf8nqo0utstbc2lvelj375ksp6hh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164554438316:android:e23f81318bb70daa811109",
+        "android_client_info": {
+          "package_name": "dyrda.fit.bstu.by.testdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164554438316-jgmcf8nqo0utstbc2lvelj375ksp6hh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkXY1YMTjr_PPJXRLc-UFCLg-OFFLVQ0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164554438316-jgmcf8nqo0utstbc2lvelj375ksp6hh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

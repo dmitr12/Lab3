@@ -1,7 +1,9 @@
 ﻿using JsonL.Interfaces;
 using JsonL.Models;
+using Ninject;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,24 +12,13 @@ namespace Lab6.Controllers
 {
     public class DictController : Controller
     {
+        [Inject]
+        public IPhoneDictionary repos { get; set; }
 
-        public ActionResult Test()
-        {
-            ViewBag.Fruits = new string[] { "Яблоко", "Апельсин", "Груша" };
-            ViewBag.Cities = new string[] { "Москва", "Лондон", "Париж" };
-
-            string message = "Это HTML-элемент: <input>";
-
-            return View((object)message);
-        }
-
-
-        private IPhoneDictionary repos;
-
-        public DictController(IPhoneDictionary repos)
-        {
-            this.repos = repos;
-        }
+        //public DictController(IPhoneDictionary repos)
+        //{
+        //    this.repos = repos;
+        //}
 
         public ActionResult Index()
         {

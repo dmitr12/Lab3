@@ -30,3 +30,4 @@ C:\Labs\Asp\Lab6\SqlL\obj\Debug\SqlL.csproj.CoreCompileInputs.cache
 C:\Labs\Asp\Lab6\SqlL\obj\Debug\SqlL.csproj.CopyComplete
 C:\Labs\Asp\Lab6\SqlL\obj\Debug\SqlL.dll
 C:\Labs\Asp\Lab6\SqlL\obj\Debug\SqlL.pdb
+C:\Labs\Asp\Lab6\SqlL\bin\Debug\JsonL.dll.config

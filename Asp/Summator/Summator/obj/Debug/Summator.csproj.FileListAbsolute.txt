@@ -1,0 +1,7 @@
+C:\Labs\Asp\Summator\Summator\bin\Debug\Summator.dll.config
+C:\Labs\Asp\Summator\Summator\bin\Debug\Summator.dll
+C:\Labs\Asp\Summator\Summator\bin\Debug\Summator.pdb
+C:\Labs\Asp\Summator\Summator\obj\Debug\Summator.csprojAssemblyReference.cache
+C:\Labs\Asp\Summator\Summator\obj\Debug\Summator.csproj.CoreCompileInputs.cache
+C:\Labs\Asp\Summator\Summator\obj\Debug\Summator.dll
+C:\Labs\Asp\Summator\Summator\obj\Debug\Summator.pdb
